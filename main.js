@@ -1,8 +1,12 @@
-var song = "";
+song = "";
 leftWristX =0;
 leftWristY =0;
 rightWristX=0;
 rightWristY=0;
+
+function preload(){
+    song = loadSound("music.mp3");
+}
 
 function setup(){
     canvas= createCanvas(500,600);
@@ -37,9 +41,6 @@ function draw() {
     image(video,0,0,600,500);
 }
 
-function preload(){
-    song = loadSong("music.mp3");
-}
 
 function play(){
     song.play();
